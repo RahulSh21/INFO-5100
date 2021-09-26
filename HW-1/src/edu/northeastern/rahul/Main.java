@@ -30,7 +30,6 @@ public class Main {
 
     }//Main Class End
 
-
     //Question 1
     public static void sumTotal(int [] arr, int trag){
         for(int i = 1; i <= arr.length-1; i++){
@@ -129,6 +128,5 @@ public class Main {
         }//End of for loop int i
         System.out.println("Result is True");
     }//End of checkDig function --> Question 5
-
 
 }//End of class main
