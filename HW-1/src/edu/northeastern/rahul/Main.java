@@ -127,6 +127,6 @@ public class Main {
             }//End of else statement
         }//End of for loop int i
         System.out.println("Result is True");
-    }//End of checkDig function --> Question 5
+    }//End of checkDig function --> End of Question 5
 
 }//End of class main
