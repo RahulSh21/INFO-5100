@@ -8,7 +8,7 @@ public class Main {
         //Question 1
         int [] arr = {2,7,5,11,15};
         int trag = 9;
-        sumTotal(arr,trag);// calling for sunTotal function
+        sumTotal(arr,trag);// calling for sumTotal function
 
         //Question 2
         int [] array = {-4,-1,0,3,10};
@@ -28,7 +28,7 @@ public class Main {
         System.out.println("Lenght of string is " + ag.length());
         checkDig(ag);//calling for checkDig function
 
-    }//Main Class End
+    }//End of main
 
     //Question 1
     public static void sumTotal(int [] arr, int trag){
@@ -41,14 +41,14 @@ public class Main {
             if(i >= arr.length-1) {
                 System.out.println("sum no. not present");
             }//End of if statement
-        }//End of for loop int i
+        }//End of for loop integer i
     }//End sumTotal function --> End of Question 1
 
     //Question 2
     private static void squareArray(int[] array){
         for( int i = 0; i < array.length; i++){
             array[i] = array[i] * array[i];
-        }//End of for loop int i
+        }//End of for loop integer i
     }//End of squareArray function
 
     private static void bubbleSort(int[] array) {
@@ -59,15 +59,15 @@ public class Main {
                     array[j] = array[j + 1];
                     array[j + 1] = k;
                 }//End of if statement
-            }//End of for loop int j
-        }//End of for loop int i
+            }//End of for loop integer j
+        }//End of for loop integer i
     }//End of bubbleSort function
 
     private static void print(int [] arr){
         System.out.println("Output :");
         for (int i = 0; i<arr.length; i++){
             System.out.print(" "+ arr[i]);
-        }//End of for loop int i
+        }//End of for loop integer i
     }//End of print Function --> End of Question 2
 
     //Question 3
@@ -85,8 +85,8 @@ public class Main {
                 {
                     break;
                 }//End of if statement
-            }//End of for loop int j
-        }//End of for loop int i
+            }//End of for loop integer j
+        }//End of for loop integer i
         System.out.println("No Output found of non Reapeater ");
     }//End nonRepeating function --> End of Question 3
 
@@ -100,7 +100,7 @@ public class Main {
 
         boolean flag = false;
         boolean visited[] = new boolean[ransomNote.length()];//Creating Array of type boolean
-        Arrays.fill(visited, Boolean.FALSE);//Assigning false value to boolean array element
+        Arrays.fill(visited, Boolean.FALSE);//Assigning false value to boolean array
         for (int i = 0; i < magazine.length(); i++) {
             flag = false;
             for (int j = 0; j < ransomNote.length(); j++) {
@@ -125,7 +125,7 @@ public class Main {
                 System.out.println("Result is false");
                 return;
             }//End of else statement
-        }//End of for loop int i
+        }//End of for loop integer i
         System.out.println("Result is True");
     }//End of checkDig function --> End of Question 5
 
