@@ -7,8 +7,8 @@ public class Main {
 
         //Question 1
         int [] arr = {2,7,5,11,15};
-        int trag = 9;
-        sumTotal(arr,trag);// calling for sumTotal function
+        int target = 9;
+        sumTotal(arr,target);// calling for sumTotal function
 
         //Question 2
         int [] array = {-4,-1,0,3,10};
@@ -25,23 +25,27 @@ public class Main {
 
         //Question 5
         String ag = "1A3d4s5t";
-        System.out.println("Lenght of string is " + ag.length());
+        System.out.println("Answer 5: Lenght of string is " + ag.length());
         checkDig(ag);//calling for checkDig function
 
-    }//End of main
+    }//End of main function
 
     //Question 1
-    public static void sumTotal(int [] arr, int trag){
-        for(int i = 1; i <= arr.length-1; i++){
-            if((arr[0] + arr[i])/ trag == 1 ){
-                System.out.println("num "+ arr[0] + " & " +arr[i] + " is " + trag );
+    public static void sumTotal(int [] arr, int target){
+        Arrays.sort(arr); // Sorting of array
+        int start = 0;
+        int end = arr.length - 1;
+        while (start < end){
+            if(arr[start] + arr[end] == target){
+                System.out.println("Answer 1: Number is " + arr[start] + " & " + arr[end]);
                 return;
-            }//End of if statement
-            else
-            if(i >= arr.length-1) {
-                System.out.println("sum no. not present");
-            }//End of if statement
-        }//End of for loop integer i
+            }
+            if(arr[start] + arr[end] < target){
+                ++ start;
+            } else {
+                -- end;
+            }//End of else statement
+        }//End of while loop
     }//End sumTotal function --> End of Question 1
 
     //Question 2
@@ -64,21 +68,22 @@ public class Main {
     }//End of bubbleSort function
 
     private static void print(int [] arr){
-        System.out.println("Output :");
-        for (int i = 0; i<arr.length; i++){
-            System.out.print(" "+ arr[i]);
+        System.out.println("Answer 2: Output is ");
+        for (int j : arr) {
+            System.out.print(" " + j);
         }//End of for loop integer i
     }//End of print Function --> End of Question 2
 
     //Question 3
     private static void  nonRepeating(int arr[])
     {
+        System.out.println("");
         for (int i = 0; i < arr.length ; i++) {
             int j;
             for (j = 0; j <= arr.length; j++) {
                 if (j == arr.length)
                 {
-                    System.out.println("First non-repeating element is: "+arr[i]);
+                    System.out.println("Answer 3: First non-repeating element is: "+arr[i]);
                     return;
                 }//End of if statement
                 if (j != i && arr[i] == arr[j])
@@ -87,12 +92,12 @@ public class Main {
                 }//End of if statement
             }//End of for loop integer j
         }//End of for loop integer i
-        System.out.println("No Output found of non Reapeater ");
+        System.out.println("Answer 3: No Output found of non Repeating ");
     }//End nonRepeating function --> End of Question 3
 
     //Question 4
     public static boolean construct(String ransomNote, String magazine) {
-        System.out.println("Output is ");
+        System.out.print("Answer 4: Output is ");
         if (ransomNote.length() < magazine.length()) {
             //Compairing the lenght of ransomNote & magazine
             return false;
@@ -115,18 +120,18 @@ public class Main {
     }//End construct function --> End of Question 4
 
     //Question 5
-    private static void checkDig(String ag) {
+    public static void checkDig(String ag) {
         for (int i = 0; i <= ag.length() - 1; i++) {
             int a = ag.charAt(i);//Getting ASCII value of alphabet
             char b = ag.charAt(i + 1);//Getting digit
             if (a >= 65 && a <= 122 && b >= '0' && b <= '9') {
                 i += 1;
             } else {
-                System.out.println("Result is false");
+                System.out.println("Answer 5: Result is false");
                 return;
             }//End of else statement
         }//End of for loop integer i
-        System.out.println("Result is True");
+        System.out.println("Answer 5: Result is True");
     }//End of checkDig function --> End of Question 5
 
 }//End of class main
