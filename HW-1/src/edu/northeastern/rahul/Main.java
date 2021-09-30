@@ -36,11 +36,11 @@ public class Main {
         int start = 0;
         int end = arr.length - 1;
         while (start < end){
-            if(arr[start] + arr[end] == target){
+            if (arr[start] + arr[end] == target){
                 System.out.println("Answer 1: Number is " + arr[start] + " & " + arr[end]);
                 return;
             }
-            if(arr[start] + arr[end] < target){
+            if (arr[start] + arr[end] < target){
                 ++ start;
             } else {
                 -- end;
