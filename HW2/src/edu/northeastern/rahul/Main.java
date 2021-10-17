@@ -91,8 +91,8 @@ public class Main {
         rotateImage.printMatrix(rotateMatrix);
 
         // Question 5 LeetCode: Spiral Matrix
-        //All function are define in different class called SpiralMatrix
-        System.out.println("LeetCode Question 5 Output ");
+        //All function are define in different function called SpiralMatrix
+        System.out.println("LeetCode Question 5 ");
         SpiralMatrix spiralMatrix = new SpiralMatrix();
         int matrix2[][] = { {1,2,3,4} , {5,6,7,8} , {9,10,11,12} };
         int sMatrix[] = spiralMatrix.spiralMatrix(matrix2);
