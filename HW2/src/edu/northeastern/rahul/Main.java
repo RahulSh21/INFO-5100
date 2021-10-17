@@ -80,7 +80,7 @@ public class Main {
         System.out.println();
 
         // Question4 LeetCode: Rotate Image
-        //All function are define in different class called RotateImage
+        //All function are define in different Function called RotateImage
         System.out.println("LeetCode Question 4 Output ");
         int rotateMatrix[][] = {{1,2,3} , {4,5,6} , {7,8,9}};
         RotateImage rotateImage = new RotateImage();
