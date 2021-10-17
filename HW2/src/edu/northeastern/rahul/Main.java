@@ -109,20 +109,12 @@ public class Main {
         System.out.println("Sum of two string " + resultaddstring);
 
         // Question 8 LeetCode: Valid Palindrome
-        //All function are define in different class called ValidPalindrome
-        System.out.println("LeetCode Question 8 Output ");
+        //All function are define in different Function called ValidPalindrome
+        System.out.println("LeetCode Question 8 ");
         ValidPalindrome validPalindrome = new ValidPalindrome();
         String s1 = "A man, a plan, a canal: Panama ";
         boolean palindrome = validPalindrome.isPalindrome(s1);
         System.out.println("Given String is Palindrome " + palindrome);
-
-        // Question 9 LeetCode: Reverse Words In a String
-        //All function are define in different Function called ReverseWordsInString
-        System.out.println("LeetCode Question 9 Output ");
-        ReverseWordsInString reverseWordsInString = new ReverseWordsInString();
-        String s2 = " the sky is  blue  ";
-        String result2 = reverseWordsInString.reverseString(s2);
-        System.out.println(s2 + "\n Reverse Words : " + result2);
 
 
     }
