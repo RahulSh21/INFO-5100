@@ -99,14 +99,6 @@ public class Main {
         System.out.println("Output of Spiral Matrix");
         spiralMatrix.printSpiralMatrix(sMatrix);
 
-        // Question 6 LeetCode: Isomorphic Strings
-        //All function are define in different class called IsomorphicStrings
-        System.out.println("\n LeetCode Question 6 Output ");
-        IsomorphicStrings isomorphicStrings = new IsomorphicStrings();
-        boolean result = isomorphicStrings.isIsomorphic("egg", "add");
-        System.out.println("\n Given string Isomorphic condition is : " + result);
-        boolean result1 = isomorphicStrings.isIsomorphic("foo", "bar");
-        System.out.println("\n Given string Isomorphic condition is : " + result1);
 
         // Question 7 LeetCode: Add Strings
         //All function are define in different class called AddStrings
@@ -125,20 +117,13 @@ public class Main {
         System.out.println("Given String is Palindrome " + palindrome);
 
         // Question 9 LeetCode: Reverse Words In a String
-        //All function are define in different class called ReverseWordsInString
+        //All function are define in different Function called ReverseWordsInString
         System.out.println("LeetCode Question 9 Output ");
         ReverseWordsInString reverseWordsInString = new ReverseWordsInString();
         String s2 = " the sky is  blue  ";
         String result2 = reverseWordsInString.reverseString(s2);
         System.out.println(s2 + "\n Reverse Words : " + result2);
 
-        // Question 10 LeetCode: String Compression
-        //All function are define in different class called StringCompression
-        System.out.println("LeetCode Question 10 Output ");
-        StringCompression compression = new StringCompression();
-        char chars[] = {'a', 'b', 'a', 'b','b','b','b', 'c', 'c', 'c', 'q','q','q','q','q','q'};
-        int lengthOfChars = compression.stringCompression(chars);
-        System.out.println("Length of compressed string = " + lengthOfChars );
 
     }
 }
