@@ -15,7 +15,7 @@ public class Main {
     public static int[] spiralMatrix(int matrix[][]){
         int m = matrix.length;
         int n = matrix[0].length;
-        int spiralMatrix[] = new int[m*n];
+        int[] spiralMatrix = new int[m*n];
         int top = 0, bottom = m - 1, left = 0, count = 0, right = n - 1;
 
         // Defining the direction in which the array is to be traversed.
@@ -62,7 +62,7 @@ public class Main {
         }
         return spiralMatrix;
     }
-    public static void printSpiralMatrix(int matrix[]){
+    public static void printSpiralMatrix(int[] matrix){
         for(int i = 0; i<matrix.length; i++){
             System.out.print( matrix[i] +", ");
         }
