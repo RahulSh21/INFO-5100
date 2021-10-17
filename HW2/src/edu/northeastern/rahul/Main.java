@@ -43,7 +43,7 @@ public class Main {
         System.out.println(sum.add(1.0,6.4));
 
         // Question 1 LeetCode: Transpose Matrix
-        //All function are define in different class called TransposeMatrix
+        //All function are define in different Function called TransposeMatrix
         //Assuming it's a square matrix
         System.out.println("LeetCode Question 1 Output ");
         int matrix[][] = {{1,2,3} , {4,5,6} , {7,8,9}};
