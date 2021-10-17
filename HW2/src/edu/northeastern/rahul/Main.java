@@ -101,7 +101,7 @@ public class Main {
 
 
         // Question 7 LeetCode: Add Strings
-        //All function are define in different class called AddStrings
+        //All function are define in different diffrent called AddStrings
         System.out.println("LeetCode Question 7 Output ");
         AddStrings sumString = new AddStrings();
         String num1 = "456" , num2 = "177";
