@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         // Question 7 LeetCode: Add Strings
         //All function are define in different diffrent called AddStrings
-        System.out.println("LeetCode Question 7 Output ");
+        System.out.println("LeetCode Question 7 ");
         String num1 = "456" , num2 = "177";
         String resultaddstring = addString( num1, num2);
         System.out.println("Sum of two string " + resultaddstring);
