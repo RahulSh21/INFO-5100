@@ -55,7 +55,7 @@ public class Main {
         matrix1.printMatrix(transpose);
 
         // Question 2 LeetCode: Shortest Word Distance
-        //All function are define in different class called ShortestWordDistance
+        //All function are define in different function called ShortestWordDistance
         System.out.println("LeetCode Question 2 Output ");
         String wordsDict[] ={"practice", "makes", "perfect", "coding", "makes"};
         String word1 = "makes";
