@@ -13,8 +13,7 @@ public class Main {
         fiction.description();
         nonFiction.description();
 
-
-        //Question 2
+         //Question 2
         Printer p1 = Printer.getInstance();
         p1.getConnection();
 
