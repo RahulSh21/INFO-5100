@@ -8,8 +8,10 @@ public class Main {
     public static void main(String[] args) {
 
         //Question 1
-        Fiction fiction = new Fiction("frankenstein",250.0, 1958);
-        NonFiction nonFiction = new NonFiction("Anne Frank", 150.0, 1987);
+        Fiction fiction = new Fiction("frankenstein",250.0, "1958");
+        NonFiction nonFiction = new NonFiction("Anne Frank", 150.0, "1987");
+        fiction.description();
+        nonFiction.description();
 
 
         //Question 2
