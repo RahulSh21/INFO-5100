@@ -8,13 +8,12 @@ public class Main {
     public static void main(String[] args) {
 
         //Question 1
-        //Fiction frankenstein = new Fiction();
-        //NonFiction Anne_Frank = new NonFiction();
+        Fiction fiction = new Fiction("frankenstein",250.0, 1958);
+        NonFiction nonFiction = new NonFiction("Anne Frank", 150.0, 1987);
 
 
         //Question 2
-        Printer p1;
-        p1= Printer.getInstance();
+        Printer p1 = Printer.getInstance();
         p1.getConnection();
 
         //Question 3
