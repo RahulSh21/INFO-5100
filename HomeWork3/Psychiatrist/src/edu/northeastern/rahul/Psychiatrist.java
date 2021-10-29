@@ -1,14 +1,14 @@
 package edu.northeastern.rahul;
 
 public class Psychiatrist {
-    public void examine(Moody object1 ) {
-        object1.queryMood();
-        System.out.println( object1.getMpod());
+    public void examine(Moody object ) {
+        object.queryMood();
+        System.out.println( object.getMpod());
     }
 
-    public void observe(Moody object1) {
-        object1.expressFeelings();
-        System.out.println(object1.toString());
+    public void observe(Moody object) {
+        object.expressFeelings();
+        System.out.println(object.toString());
     }
 
     @Override
