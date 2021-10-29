@@ -13,7 +13,7 @@ public class Psychiatrist {
 
     @Override
     public String toString() {
-        return "Subject laughs a lot";
+        return ("Subject laughs a lot");
 
     }
 }
