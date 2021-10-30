@@ -3,7 +3,7 @@ package edu.northeastern.rahul;
 public class Happy extends Moody{
 
     @Override
-    protected String getMpod() {
+    protected String getMood() {
         return "I feel Happy today";
     }
 
@@ -14,6 +14,11 @@ public class Happy extends Moody{
 
     @Override
     public String toString(){
-        return "Obervation : Subject laughs a lot";
+        return "Happy Person";
+    }
+
+    @Override
+    public void queryMood() {
+        System.out.println(getMood());
     }
 }

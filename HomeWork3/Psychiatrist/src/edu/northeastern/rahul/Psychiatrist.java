@@ -1,19 +1,19 @@
 package edu.northeastern.rahul;
 
 public class Psychiatrist {
+
     public void examine(Moody object ) {
+        System.out.println("How are you feeling today?");
         object.queryMood();
-        System.out.println( object.getMpod());
+
     }
 
     public void observe(Moody object) {
         object.expressFeelings();
-        System.out.println(object.toString());
-    }
-
-    @Override
-    public String toString() {
-        return ("Subject laughs a lot");
-
+        if (object.toString().contains("Happy")) {
+            System.out.println("Observation : Subject laughs a lot");
+        } else {
+            System.out.println("Observation : Subject cries a lot");
+        }
     }
 }

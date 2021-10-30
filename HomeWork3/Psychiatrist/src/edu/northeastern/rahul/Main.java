@@ -12,5 +12,6 @@ public class Main {
         System.out.println();
         psychiatrist.examine( moodySad);
         psychiatrist.observe(moodySad);
+
     }
 }
