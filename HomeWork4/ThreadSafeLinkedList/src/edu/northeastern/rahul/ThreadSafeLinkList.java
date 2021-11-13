@@ -13,8 +13,8 @@ public class ThreadSafeLinkList <T> {
 
         public void addAtPosition(int index, T element){
             synchronized (object){
-                System.out.println(" Index = " + index + " list.size = " + list.size());
                 list.add(index, element);
+                System.out.println( Thread.currentThread().getName() + " has add at Index = " + index + " and element " + element + " list current size = " + list.size());
             }
 
         }
@@ -22,10 +22,10 @@ public class ThreadSafeLinkList <T> {
         public void removeAtPosition(int index){
 
             synchronized (object){
-                if(list.size() <= index || index <0){
+                if(list.size() <= index || index < 0){
                     return;
                 }
-                System.out.println("Thread name = " + Thread.currentThread().getName() +  " List Size = " + list.size() + " Index = " + index);
+                System.out.println( Thread.currentThread().getName() + " has removed at Index = " + index +  " List current Size = " + list.size());
                 list.remove(index);
             }
         }

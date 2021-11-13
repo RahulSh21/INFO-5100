@@ -5,13 +5,14 @@ public class CreateThread implements Runnable{
     @Override
     public void run() {
 
-        Random rand = new Random();
+        Random element = new Random();
 
         while(true){
 
-            int test = rand.nextInt(2);
-            if(test >= 1){
-                Main.tLinkList.addAtPosition(0, rand.nextInt(10));
+            int nums = element.nextInt(3);
+            if(nums >= 1){
+
+                Main.tLinkList.addAtPosition(0, element.nextInt(100));
             }else{
                 Main.tLinkList.removeAtPosition(Main.tLinkList.size() -1);
             }
