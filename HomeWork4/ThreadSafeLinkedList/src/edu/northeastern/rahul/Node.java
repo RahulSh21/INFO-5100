@@ -1,13 +1,16 @@
 package edu.northeastern.rahul;
 
 public class Node {
-
-    public int data;
+    public Object data;
     public Node next;
 
-    public Node(int data){
+    public Node(Object data){
         this.data = data;
+        this.next = null;
     }
 
-
+    public Node(Object data, Node next){
+        this.data = data;
+        this.next = next;
+    }
 }
