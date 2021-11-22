@@ -23,7 +23,7 @@ public class LinkList <T>{
         }
     }
 
-    private void add(T e) {
+    void add(T e) {
         if(this.tail == null){
             this.tail = new Node(e);
             this.head = this.tail;

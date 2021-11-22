@@ -1,5 +1,6 @@
 package edu.northeastern.rahul;
 
+import java.util.Random;
 public class Main {
 
     public static ThreadSafeLinkList<Integer> tLinkList;
@@ -7,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         tLinkList = new ThreadSafeLinkList<>();
+
 
         Thread[] threads = new Thread[5];
 
