@@ -1,5 +1,6 @@
 package edu.northeastern.rahul;
 
 public interface ICar {
- void assemble();
+ public void assemble();
+
 }

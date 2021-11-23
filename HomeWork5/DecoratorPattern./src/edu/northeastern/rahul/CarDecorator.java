@@ -2,17 +2,15 @@ package edu.northeastern.rahul;
 
 public class CarDecorator implements ICar{
 
-    protected BasicCar basicCar;
-    //protected String carName;
+    protected ICar basicCar;
 
-    CarDecorator(BasicCar car){
 
-        car.assemble();
+    public CarDecorator(ICar basicCar){
+           this.basicCar = basicCar;
     }
 
     @Override
     public void assemble(){
-
-       // System.out.println( this.carName );
+        this.basicCar.assemble();
     }
 }
