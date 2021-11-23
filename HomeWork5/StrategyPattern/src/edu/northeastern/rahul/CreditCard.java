@@ -1,13 +1,15 @@
 package edu.northeastern.rahul;
 
 public class CreditCard implements PaymentStrategy{
-    @Override
-    public void pay() {
+    private String cardNumber;
 
+    public CreditCard(String cardNumber){
+        this.cardNumber = cardNumber;
     }
 
     @Override
-    public void pay(int a) {
-
+    public void pay(int amount) {
+        System.out.println("CreditCard : " + amount);
     }
+
 }

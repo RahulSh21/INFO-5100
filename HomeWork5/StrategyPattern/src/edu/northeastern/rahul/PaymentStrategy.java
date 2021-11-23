@@ -1,6 +1,6 @@
 package edu.northeastern.rahul;
 
 public interface PaymentStrategy {
-    public void pay(int a){}
+    public void pay(int amount);
 
 }
