@@ -50,23 +50,23 @@ public class Main {
     }
 
     public static void compareName(List<Student> studentList){
-        System.out.println("******Compare by Name********");
+        System.out.println("******Sort by Name********");
         Collections.sort(studentList, (student1, student2) -> student1.getName().compareTo(student2.getName()));
         toPrint(studentList);
     }
     public static void compareId(List<Student> studentList){
-        System.out.println("*******Compare With Id********");
+        System.out.println("*******Sort by Id********");
         Collections.sort(studentList, (student1, student2) -> student1.getId().compareTo(student2.getId()));
         toPrint(studentList);
     }
 
     public static void compareGPA(List<Student> studentList){
-        System.out.println("*****Compare descending order of gpa**********");
+        System.out.println("*****Sort in descending order of gpa**********");
         Collections.sort(studentList, (student2, student1) -> (student1.getGpa().compareTo(student2.getGpa())));
         toPrint(studentList);
     }
     public static void compareDateOfBirth(List<Student> studentList){
-        System.out.println("*****Compare by Date of Birth **********");
+        System.out.println("*****Sort by Date of Birth **********");
         Collections.sort(studentList, (student1, student2) -> (student1.getDateOfBirth().compareTo(student2.getDateOfBirth())));
         toPrint(studentList);
     }
