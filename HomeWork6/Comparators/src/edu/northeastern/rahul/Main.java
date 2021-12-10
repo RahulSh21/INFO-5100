@@ -30,9 +30,13 @@ public class Main {
         studentList.add(Bob);
         studentList.add(Frank);
 
+        //Function calling to sort by Name
         compareName(studentList);
+        //Function calling to sort in descending order by gpa
         compareGPA(studentList);
+        //Function calling to sort by Id
         compareId(studentList);
+        //Function calling to sort by Date of Birth
         compareDateOfBirth(studentList);
 
     }
