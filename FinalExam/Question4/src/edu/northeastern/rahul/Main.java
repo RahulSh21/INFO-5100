@@ -67,7 +67,7 @@ public class Main {
         Collections.sort(listOfAllMovie, new Comparator<Movie>() {
         @Override
         public int compare(Movie o1, Movie o2) {
-            return o1.Title.compareTo(o2.Title);
+            return o1.titleOfMovie.compareTo(o2.Title);
         }
     });
 }
