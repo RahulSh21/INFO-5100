@@ -1,11 +1,9 @@
 package edu.northeastern.rahul;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -52,14 +50,14 @@ public class Main {
     List<Movie> ans = netflix.list.stream().flatMap(genre -> genre.list.stream()).sorted(new Comparator<Movie>() {
         @Override
         public int compare(Movie o1, Movie o2) {
-            return o2.ReleaseDate.compareTo(o1.ReleaseDate);
+            return o2.releaseDate.compareTo(o1.releaseDate);
         }
     }).limit(3).collect(Collectors.toList());
 
 
     <Movie> listOfAllMovie = netflix.list.stream().flatMap(genre -> genre.list.stream()).collect(Collectors.toList());
-    Predicate<Movie> dateBefore2000 = movie -> movie.ReleaseDate.before(twoThousand);
-    Predicate<Movie> dateAfter1990 = movie -> movie.ReleaseDate.after(nineteenHundred);
+    Predicate<Movie> dateBefore2000 = movie -> movie.releaseDate.before(twoThousand);
+    Predicate<Movie> dateAfter1990 = movie -> movie.releaseDate.after(nineteenHundred);
     printMovieInRange((ArrayList<Movie>) listOfAllMovie, dateBefore2000, dateAfter1990);
 
 
