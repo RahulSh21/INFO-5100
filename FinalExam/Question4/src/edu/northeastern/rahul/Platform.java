@@ -26,10 +26,10 @@ public class Platform {
 
     Platform(String name){
         this.name = name;
-        genres = new ArrayList<List<Genre>>();
+        genres = new ArrayList<Genre>();
     }
 
-    public void addGenre(){
-        this.genres.add(genres);
+    public void addGenre(Genre genre){
+        this.genres.add(genre);
     }
 }
